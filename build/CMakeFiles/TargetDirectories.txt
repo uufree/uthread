@@ -1,3 +1,0 @@
-/home/liuyi/workspace/uthread/build/CMakeFiles/edit_cache.dir
-/home/liuyi/workspace/uthread/build/CMakeFiles/rebuild_cache.dir
-/home/liuyi/workspace/uthread/build/CMakeFiles/HPRThread.dir

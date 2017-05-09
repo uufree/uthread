@@ -11,6 +11,7 @@
 #include<pthread.h>
 #include<functional>
 #include<assert.h>
+#include<iostream>
 
 namespace thread
 {
@@ -28,10 +29,10 @@ namespace thread
             isstart(false),
             threadfunc(lhs)
             {};
-            
-            Thread(Thread&& lhs) = delete;
-            Thread& operator=(const Thread& lhs) = delete;
-            Thread& operator=(Thread&& lhs) = delete;
+           
+            Thread(const Thread& lhs);
+            Thread(Thread&& lhs);
+            Thread& operator=(const Thread& lhs);
             
             ~Thread();
                 
