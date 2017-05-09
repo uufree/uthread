@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/linux/Thread.h
+pthread.h
+-
+functional
+-
+assert.h
+-
+
+../include/linux/ThreadPool.h
+Thread.h
+../include/linux/Thread.h
+deque
+-
+map
+-
+memory
+-
+
+/home/liuyi/workspace/uthread/src/linux/Thread.cpp
+Thread.h
+/home/liuyi/workspace/uthread/src/linux/Thread.h
+iostream
+-
+
+/home/liuyi/workspace/uthread/src/linux/ThreadPool.cpp
+ThreadPool.h
+/home/liuyi/workspace/uthread/src/linux/ThreadPool.h
+
