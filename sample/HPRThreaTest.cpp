@@ -6,7 +6,7 @@
  ************************************************************************/
 
 #include<iostream>
-#include"../Thread.h"
+#include <Thread.h>
 #include<unistd.h>
 
 void printInt(int num)

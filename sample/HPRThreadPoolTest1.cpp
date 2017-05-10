@@ -6,7 +6,7 @@
  ************************************************************************/
 //测试线程池的任务队列
 
-#include"../ThreadPool.h"
+#include<ThreadPool.h>
 #include<iostream>
 
 typedef std::function<void()> Task;

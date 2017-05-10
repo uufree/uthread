@@ -7,7 +7,7 @@
 
 //测试线程池的线程功能
 
-#include"../ThreadPool.h"
+#include<ThreadPool.h>
 #include<iostream>
 
 void print()
