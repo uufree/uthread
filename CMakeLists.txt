@@ -109,6 +109,7 @@ ELSEIF(WINDOWS)
 	MESSAGE(STATUS "WINDOWS SOURCE LIST ${SRC_LIST}")
 ENDIF()
 
+###############################set library link#####################################
 IF(BUILD_LIBRARY)
 	ADD_LIBRARY(HPRThread SHARED ${SRC_LIST})
 	TARGET_LINK_LIBRARIES(HPRThread ${HPRTHREAD_LIB})
@@ -116,6 +117,8 @@ ENDIF()
 
 SET(SOURCE_FILE_ROOT_PATH ${PROJECT_SOURCE_DIR}/sample)
 
+
+##############################complie exectable file###############################
 IF(BUILD_SAMPLE)
 	AUX_SOURCE_DIRECTORY(${PROJECT_SOURCE_DIR}/sample SAMPLE_TEST_PATH_LIST)
 	MESSAGE(STATUS "Sample List : ${SAMPLE_TEST_PATH_LIST}")
